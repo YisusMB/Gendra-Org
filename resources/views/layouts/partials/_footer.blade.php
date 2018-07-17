@@ -1,17 +1,20 @@
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+<!-- Footer section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="" style="margin: auto; display: block;">
+                    <div class="social">
+                        <a href="index.html#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="index.html#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="index.html#"><i class="fab fa-google"></i></a>
+                        <a href="index.html#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="" style="font-size: 15px; text-align: center;">
+                        <br />
+                        <b>Powered by <a href="http://www.gendra.mx">Gendra</a></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end -->
