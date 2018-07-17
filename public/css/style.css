@@ -435,8 +435,9 @@ ol {
 }
 
 .event-section .site-btn {
+	margin: auto;
 	position: relative;
-	top: -15px;
+	display: block;
 }
 
 .event-date {
