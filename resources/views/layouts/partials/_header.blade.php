@@ -11,8 +11,8 @@
 <!-----------------------------------------------MAIN MENU------------------------------------------------------------>         
             <nav class="main-menu" >
                 <ul >
-                    <li class="active" ><a href="index.html">Inicio</a></li>
-                    <li><a href="about.html">Nosotros</a></li>
+                    <li class="active"><a href="/">Inicio</a></li>
+                    <li><a href="/nosotros">Nosotros</a></li>
                     <li><a href="sermons.html">Proyectos</a></li>
                 <!--    <li><a href="event.html">Event</a></li> -->
                     <li><a href="blog.html">Cursos</a></li>
