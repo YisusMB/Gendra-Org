@@ -1,5 +1,5 @@
 <!-- header top section -->
-    <!--div class="top-nav-section hidden-xs">
+    <div class="top-nav-section hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-md-3 col-lg-3">
@@ -10,10 +10,10 @@
                         <a href="index.html#"><i class="ti-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-7 col-lg-6">
+                <div class="col-sm-6 col-md-7 col-lg-6" >
                     <div class="counter-top">
                         <h5>Upcoming Event:</h5>
-                        <div class="counter">
+                        <div class="counter" >
                             <div class="counter-item"><h4>10</h4>Days</div>
                             <div class="counter-item"><h4>08</h4>hours</div>
                             <div class="counter-item"><h4>40</h4>Mins</div>
@@ -29,5 +29,5 @@
                 </div>
             </div>
         </div>
-    </div-->
+    </div>
 <!-- header top section end-->

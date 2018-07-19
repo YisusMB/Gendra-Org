@@ -13,10 +13,9 @@
                 <ul >
                     <li class="active"><a href="/">Inicio</a></li>
                     <li><a href="/nosotros">Nosotros</a></li>
-                    <li><a href="sermons.html">Proyectos</a></li>
+                    <li><a href="/proyectos">Proyectos</a></li>
                 <!--    <li><a href="event.html">Event</a></li> -->
-                    <li><a href="blog.html">Cursos</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="/cursos">Cursos</a></li>
                 </ul>
             </nav>
             </h3>

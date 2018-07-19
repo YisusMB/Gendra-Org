@@ -32,6 +32,7 @@
         <div class="loader"></div>
     </div>
 
+
     @include("layouts.partials._header")
 
     @include("layouts.partials._hero")

@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-6 footer-top-content">
                     <div class="section-title title-left">
-                        <h2>Mantengamos contacto</h2>
+                        <h2>Platiquemos</h2>
                     </div>
                     <h3>New York, USA</h3>
                     <p>207 Park Avenue New York, NY 90210</p>
