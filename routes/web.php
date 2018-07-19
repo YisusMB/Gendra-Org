@@ -19,3 +19,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('nosotros', function () {
 	return view('layouts.pages.nosotros');
 })->name('nosotros');
+Route::get('proyectos', function () {
+	return view('layouts.pages.proyectos');
+})->name('proyectos');
+Route::get('cursos', function () {
+	return view('layouts.pages.cursos');
+})->name('cursos');

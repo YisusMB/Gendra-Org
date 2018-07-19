@@ -3,6 +3,7 @@
 @include('layouts.partials._pageInfSectNosotros')
 @component('layouts.partials._aboutSection')@endcomponent
 @component('layouts.partials._contactUs')@endcomponent
+@component('layouts.partials._newsletter')@endcomponent
 @component('layouts.partials._footer')@endcomponent
 
 

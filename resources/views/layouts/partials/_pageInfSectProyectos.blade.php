@@ -3,10 +3,10 @@
 		<div class="page-info-content">
 			<div class="pi-inner">
 				<div class="container">
-					<h2 style="font-size: 22px;">Nosotros</h2>
+					<h2 style="font-size: 22px;">Proyectos</h2>
 					<div class="site-breadcrumb" style="font-size: 14px;">
 						<a href="contact.html#">Inicio</a> <i class="fa fa-angle-right"></i>
-						<span>Nosotros</span>
+						<span>Proyectos</span>
 					</div>
 				</div>
 			</div>

@@ -90,7 +90,7 @@ ol {
 	text-transform: uppercase;
 	color: #fff;
 	border-radius: 2px;
-	background: #dd3e3e;
+	background: #e8715b;
 	letter-spacing: 1px;
 	text-align: center;
 }
@@ -110,7 +110,7 @@ ol {
 
 .site-btn.sb-line {
 	background-color: transparent;
-	border: 2px solid #dd3e3e;
+	border: 2px solid #e8715b;
 	color: #fff;
 	letter-spacing: 2px;
 }
@@ -205,7 +205,7 @@ ol {
 .section-title span {
 	font-size: 16px;
 	font-weight: 700;
-	color: #dd3e3e;
+	color: #e8715b;
 	margin-bottom: 10px;
 	display: block;
 }
@@ -406,7 +406,7 @@ ol {
 	Event Section
 -----------------------*/
 .event-section {
-	background: #dd3e3e;
+	background: #5267a0;
 	padding: 20px 0;
 }
 
@@ -420,7 +420,7 @@ ol {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #fff;
-	border-right: 1px solid #e05252;
+	border-right: 1px solid #fff;
 	text-align: center;
 	display: inline-block;
 }
@@ -444,7 +444,7 @@ ol {
 	display: inline-block;
 	float: left;
 	text-align: center;
-	background: #252525;
+	background: #dd3e3e;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -459,7 +459,7 @@ ol {
 .event-date h2 {
 	display: block;
 	background: #fff;
-	color: #dd3e3e;
+	color: black;
 	padding: 8px 0;
 	font-weight: 700;
 	margin-bottom: 5px;
@@ -537,7 +537,7 @@ ol {
 
 .sermon-left-bg {
 	position: absolute;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -593,7 +593,7 @@ ol {
 }
 
 .icon-links a:hover {
-	background: #dd3e3e;
+	background: #5267a0;
 	color: #fff;
 }
 
@@ -621,7 +621,7 @@ ol {
 	display: inline-block;
 	float: left;
 	text-align: center;
-	background: #dd3e3e;
+	background: #e8715b;
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -659,7 +659,7 @@ ol {
 }
 
 .event-list .el-metas .el-meta i {
-	color: #dd3e3e;
+	color: #e8715b;
 }
 
 .event-list .el-metas .el-meta:last-child {
@@ -671,7 +671,7 @@ ol {
 }
 
 .event-list .site-btn {
-	color: #dd3e3e;
+	color: #e8715b;
 }
 
 /*---------------------
@@ -908,7 +908,7 @@ ol {
 
 .newsletter-form .nl-send-btn {
 	position: absolute;
-	height: 100%;
+	height: 47px;
 	top: 0;
 	right: 0;
 	background: #fff;
@@ -1016,7 +1016,7 @@ ol {
 =======================*/
 
 .page-info-section {
-	height: 200px;
+	height: 100px;
 	position: relative;
 }
 
@@ -1098,8 +1098,8 @@ ol {
 
 .pageination-list a:hover {
 	color: #fff;
-	background: #dd3e3e;
-	border: 1px solid #dd3e3e;
+	background: #e8715b;
+	border: 1px solid #0000002b;
 }
 
 /*---------------------
@@ -1172,7 +1172,7 @@ ol {
 }
 
 .sermon-item .icon-links a:hover {
-	background: #dd3e3e;
+	background: #5267a0;
 }
 
 /*---------------------
@@ -1493,6 +1493,12 @@ ol {
 	.event-list .el-metas {
 		padding-top: 25px;
 	}
+	
+	.col-md-offset-6 {
+    margin-left: 0px;
+}
+
+
 }
 
 /* Tablet :768px. */
