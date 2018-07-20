@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
 Route::get('nosotros', function () {
 	return view('layouts.pages.nosotros');
 })->name('nosotros');
@@ -25,3 +24,7 @@ Route::get('proyectos', function () {
 Route::get('cursos', function () {
 	return view('layouts.pages.cursos');
 })->name('cursos');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
