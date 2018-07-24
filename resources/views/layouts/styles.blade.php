@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    <title>Gendra</title>
+    <title>Gendra Org</title>
     <meta charset="UTF-8">
     <meta name="description" content="Gendra Org">
     <meta name="keywords" content="event, creative, html">
@@ -31,19 +31,21 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-    
+
     @yield('content')
+
+    
 
 
     <!--====== Javascripts & Jquery ======-->
-    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="js/jquery.countdown.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/jquery.countdown.js"></script>
+    <script src="/js/main.js"></script>
 
     <!-- load for map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0YyDTa0qqOjIerob2VTIwo_XVMhrruxo"></script>
-    <script src="js/map.js"></script>
+    <script src="/js/map.js"></script>
     </body>
 </html>

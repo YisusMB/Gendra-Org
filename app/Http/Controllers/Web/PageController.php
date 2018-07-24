@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 use App\Course;
+use App\Profile;
 
 class PageController extends Controller
 {
@@ -14,9 +15,8 @@ class PageController extends Controller
 	}
 
     public function cursos(){
-    	$courses = Course::all();
-    	return view('layouts.pages.cursos')
-    	->with('courses', $courses);
+    	$courses = Course::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(4);
+    	return view('layouts.pages.cursos', compact('courses'));
     }
 
     public function nosotros(){
@@ -24,13 +24,12 @@ class PageController extends Controller
     }
 
     public function proyectos(){
-    	$profiles = Profile::all();
-    	return view('layouts.pages.proyectos')
-    	->with('profiles', $profiles);
+    	$profiles = Profile::orderBy('id', 'DESC')->where('status', 'PUBLISHED')->paginate(6);
+    	return view('layouts.pages.proyectos', compact('profiles'));
     }
 
     public function curso($slug){
-    	$course = Course::find('slug', $slug);
-    	return view('layouts.pages.curso')->with('course', $course);
+    	$course = Course::where('slug', $slug)->first();
+    	return view('layouts.pages.curso', compact('course'));
     }
 }

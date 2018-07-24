@@ -19,12 +19,6 @@
                             </ul>
                             <p>For God did not send his Son into the world to condemn the world, but to save the world through him.</p>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia dese mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.</p>
-                            <div class="icon-links">
-                                <a href="sermons.html"><i class="fas fa-link"></i></a>
-                                <a href="sermons.html"><i class="far fa-file-archive"></i></a>
-                                <a href="sermons.html"><i class="fas fa-headphones-alt"></i></a>
-                                <a href="sermons.html"><i class="fas fa-file-import"></i></a>
-                            </div>
                         </div>
                     </div>
                 </div>
