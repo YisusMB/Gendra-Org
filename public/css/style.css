@@ -1198,10 +1198,10 @@ ol {
 }
 
 .single-post .date {
-	font-size: 14px;
+	font-size: 20px;
 	font-family: "Lora", serif;
 	font-style: italic;
-	color: #dd3e3e;
+	color: #e8715b;
 	margin-bottom: 10px;
 }
 
@@ -1216,10 +1216,10 @@ ol {
 
 .single-post .post-metas .post-meta {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 25px;
 	font-family: "Lora", serif;
 	font-style: italic;
-	color: #b7b7b7;
+	color: #5267a0;
 	margin-top: 3px;
 }
 
@@ -1228,7 +1228,7 @@ ol {
 }
 
 .single-post p {
-	font-size: 14px;
+	font-size: 20px;
 }
 
 .single-post blockquote {

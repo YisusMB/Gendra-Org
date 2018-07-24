@@ -1,3 +1,5 @@
+
+
 <!-- Sermons list section -->
 	<section class="sermons-list-section spad">
 		<div class="container">
@@ -6,15 +8,16 @@
 				<h2>Casos de exito</h2>
 			</div>
 			<div class="row">
+				@foreach($profiles as $profile)
 				<div class="col-sm-6 col-md-4">
 					<div class="sermon-item">
 						<div class="si-thumb set-bg" style="background-size: contain;" data-setbg="img/sermons/1.jpg"></div>
 						<div class="si-content">
-							<h4>Carlos Gomez</h4>
+							<h4>{{ $profile->name }}</h4>
 							<ul class="sermon-info">
-								<li>Se unio el: <span>10/Enero/2017</span></li>
-								<li>Lenguajes: <span>PHP, Javascript</span></li>
-								<li>Se supero el: <span>20/Junio/2017</span></li>
+								<li>Se unio el: <span>{{ $profile->dateOfIncorporation }}</span></li>
+								<li>Lenguajes: <span>{{ $profile->languages }}</span></li>
+								<li>Se supero el: <span>{{ $profile->dateOfGraduation }}</span></li>
 							</ul>
 							<div class="icon-links">
 								<a href="sermons.html"><i class="fas fa-link"></i></a>
@@ -25,7 +28,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-4">
+				@endforeach
+				{{ $profiles->render() }}
+				<!--div class="col-sm-6 col-md-4">
 					<div class="sermon-item">
 						<div class="si-thumb set-bg" style="background-size: contain;"data-setbg="img/sermons/2.jpg"></div>
 						<div class="si-content">
@@ -43,8 +48,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
+				</div-->
+				<!--div class="col-sm-6 col-md-4">
 					<div class="sermon-item">
 						<div class="si-thumb set-bg" style="background-size: contain;"data-setbg="img/sermons/3.jpg"></div>
 						<div class="si-content">
@@ -62,8 +67,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
+				</div-->
+				<!--div class="col-sm-6 col-md-4">
 					<div class="sermon-item">
 						<div class="si-thumb set-bg" style="background-size: contain;"data-setbg="img/sermons/4.jpg"></div>
 						<div class="si-content">
@@ -81,8 +86,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
+				</div-->
+				<!--div class="col-sm-6 col-md-4">
 					<div class="sermon-item">
 						<div class="si-thumb set-bg" style="background-size: contain;"data-setbg="img/sermons/5.jpg"></div>
 						<div class="si-content">
@@ -100,8 +105,8 @@
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
+				</div-->
+				<!--div class="col-sm-6 col-md-4">
 					<div class="sermon-item">
 						<div class="si-thumb set-bg" style="background-size: contain;"data-setbg="img/sermons/6.jpg"></div>
 						<div class="si-content">
@@ -119,9 +124,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div-->
 			</div>
-			<div class="pagination-area">
+			<!--div class="pagination-area">
 				<ul class="pageination-list">
 					<li><a href="sermons.html#">1</a></li>
 					<li><a href="sermons.html#">2</a></li>
@@ -129,7 +134,7 @@
 					<li><a href="sermons.html#">Next <i class="fa fa-angle-double-right"></i></a></li>
 				</ul>
 				<p>Page 1 of 08 results</p>
-			</div>
+			</div-->
 		</div>
 	</section>
 	<!-- Sermons list section end -->

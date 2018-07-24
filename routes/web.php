@@ -11,17 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('nosotros', function () {
-	return view('layouts.pages.nosotros');
-})->name('nosotros');
-Route::get('proyectos', function () {
-	return view('layouts.pages.proyectos');
-})->name('proyectos');
-Route::get('cursos', function () {
-	return view('layouts.pages.cursos');
-})->name('cursos');
+Route::get('', 'Web\PageController@inicio')->name('inicio');
+Route::get('/cursos', 'Web\PageController@cursos')->name('cursos');
+Route::get('/nosotros', 'Web\PageController@nosotros')->name('nosotros');
+Route::get('/proyectos', 'Web\PageController@proyectos')->name('proyectos');
+
+//curso individual
+Route::get('/curso/{slug}', 'Web\PageController@curso')->name('curso');
+
+//panel admin
+Route::resource('courses', 'Admin\CourseController');
+Route::resource('profiles', 'Admin\ProfileController');

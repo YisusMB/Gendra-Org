@@ -2,7 +2,7 @@
     <header class="header-section">
         <div class="container">     
             <!-- logo -->
-            <h3 ><img src="img/logo.png" style="max-height: 35px;">
+            <h3 ><a href=""><img src="{{ asset('img/logo.png') }}" style="max-height: 35px;"></a>
             <!--<a href="" class="site-btn hidden-xs">send donation</a>-->
             <!-- nav menu -->
             <div class="nav-switch">
