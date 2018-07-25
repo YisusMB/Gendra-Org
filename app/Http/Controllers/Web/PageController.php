@@ -33,4 +33,9 @@ class PageController extends Controller
     	return view('layouts.pages.curso', compact('course'));
     }
 
+    public function perfil($slug){
+        $profile = Profile::where('slug', $slug)->first();
+        return view('layouts.pages.perfil', compact('profile'));
+    }
+
 }
