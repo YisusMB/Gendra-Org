@@ -23,6 +23,7 @@ Route::get('/proyectos', 'Web\PageController@proyectos')->name('proyectos');
 
 //curso individual
 Route::get('/curso/{slug}', 'Web\PageController@curso')->name('curso');
+Route::get('/perfil/{slug}', 'Web\PageController@perfil')->name('perfil');
 
 //panel admin
 Route::resource('/courses', 'Admin\CourseController');

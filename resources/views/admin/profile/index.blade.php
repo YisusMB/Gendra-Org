@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="col-md-1"> 
-			<a href="{{ route('profiles.create') }}" class="btn btn-sm btn-success">
+			<a href="{{ route('profiles.create') }}" class="btn btn-sm btn-outline-success">
 				Crear Perfil
 			</a>
 		</div>
@@ -36,17 +36,17 @@
 						<td>{{ $profile->id }}</td>
 						<td>{{ $profile->profileName }}</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-info">
+							<a href="{{ route('perfil', $profile->slug) }}" class="btn btn-sm btn-outline-info">
 								VER
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-primary">
+							<a href="" class="btn btn-sm btn-outline-primary">
 								EDITAR
 							</a>
 						</td width="10px">
 						<td>
-							<a href="" class="btn btn-sm btn-danger">
+							<a href="" class="btn btn-sm btn-outline-danger">
 								ELIMINAR
 							</a>
 						</td>

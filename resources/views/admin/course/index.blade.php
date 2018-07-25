@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<div class="col-md-1"> 
-			<a href="{{ route('courses.create') }}" class="btn btn-sm btn-success">
+			<a href="{{ route('courses.create') }}" class="btn btn-sm btn-outline-success">
 				Crear Curso
 			</a>
 		</div>
@@ -36,17 +36,17 @@
 						<td>{{ $course->id }}</td>
 						<td>{{ $course->courseName }}</td>
 						<td width="10px">
-							<a href="{{ route('curso', $course->slug) }}" class="btn btn-sm btn-info">
+							<a href="{{ route('curso', $course->slug) }}" class="btn btn-sm btn-outline-info">
 								VER
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-primary">
+							<a href="" class="btn btn-sm btn-outline-primary">
 								EDITAR
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-danger">
+							<a href="" class="btn btn-sm btn-outline-danger">
 								ELIMINAR
 							</a>
 						</td>
