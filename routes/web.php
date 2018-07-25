@@ -22,5 +22,6 @@ Route::get('/proyectos', 'Web\PageController@proyectos')->name('proyectos');
 Route::get('/curso/{slug}', 'Web\PageController@curso')->name('curso');
 
 //panel admin
-Route::resource('courses', 'Admin\CourseController');
-Route::resource('profiles', 'Admin\ProfileController');
+Route::resource('/courses', 'Admin\CourseController');
+Route::resource('/profiles', 'Admin\ProfileController');
+Route::get('/admin', 'Web\PageController@admin')->name('BackOffice');
