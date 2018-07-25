@@ -22,7 +22,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::orderBy('id', 'DESC')->paginate();
+        $courses = Course::orderBy('id', 'DESC')->paginate(10);
         return view('admin.course.index', compact('courses'));
     }
 
@@ -42,7 +42,7 @@ class CourseController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CourseStoreRequest $request)
     {
         $course = Course::create($request->all());
 
@@ -81,14 +81,14 @@ class CourseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(CourseUpdateRequest $request, $id)
     {
         $course = Course::find($id);
 
         $course->fill($request->all())->save();
 
         return redirect()->route('course.edit', $course->id)
-        ->with('info', 'Etiqueta actualizada con exito'); 
+        ->with('info', 'Curso actualizado con exito'); 
     }
 
     /**
