@@ -33,9 +33,4 @@ class PageController extends Controller
     	return view('layouts.pages.curso', compact('course'));
     }
 
-    public function admin(){
-        $courses = Course::orderBy('id', 'DESC')->paginate(30);
-        $profiles = Profile::orderBy('id', 'DESC')->paginate(30);
-        return view('layouts.pages.admin', compact('courses','profiles'));
-    }
 }
