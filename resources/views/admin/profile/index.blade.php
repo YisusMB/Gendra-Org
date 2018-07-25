@@ -14,8 +14,8 @@
 			</div>
 		</div>
 		<div class="col-md-1"> 
-			<a href="{{ route('courses.create') }}" class="btn btn-sm btn-success">
-				Crear Curso
+			<a href="{{ route('profiles.create') }}" class="btn btn-sm btn-success">
+				Crear Perfil
 			</a>
 		</div>
 	</div>
@@ -31,12 +31,12 @@
 					</tr>
 				</thead>
 				<tbody>
-					@foreach($courses as $course)
+					@foreach($profiles as $profile)
 					<tr>
-						<td>{{ $course->id }}</td>
-						<td>{{ $course->courseName }}</td>
+						<td>{{ $profile->id }}</td>
+						<td>{{ $profile->profileName }}</td>
 						<td width="10px">
-							<a href="{{ route('curso', $course->slug) }}" class="btn btn-sm btn-info">
+							<a href="" class="btn btn-sm btn-info">
 								VER
 							</a>
 						</td>
@@ -44,8 +44,8 @@
 							<a href="" class="btn btn-sm btn-primary">
 								EDITAR
 							</a>
-						</td>
-						<td width="10px">
+						</td width="10px">
+						<td>
 							<a href="" class="btn btn-sm btn-danger">
 								ELIMINAR
 							</a>
@@ -54,7 +54,7 @@
 					@endforeach
 				</tbody>
 				</table>
-				{{ $courses->render() }}
+				{{ $profiles->render() }}
 			</div>
 		</div>	
 	</div>			

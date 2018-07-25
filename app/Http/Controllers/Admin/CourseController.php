@@ -47,7 +47,7 @@ class CourseController extends Controller
         $course = Course::create($request->all());
 
         return redirect()->route('course.edit', $course->id)
-        ->with('info', 'Etiqueta creada con exito'); 
+        ->with('info', 'Curso creado con exito'); 
     }
 
     /**
