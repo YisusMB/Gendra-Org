@@ -7,7 +7,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h5 style="padding-top: 7px; color: #fff;">
-						Editar Etiqueta
+						Editar Curso
 					</h5>
 				</div>
 			</div>

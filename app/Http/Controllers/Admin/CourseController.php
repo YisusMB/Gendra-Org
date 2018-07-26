@@ -91,7 +91,10 @@ class CourseController extends Controller
     {
         $slug = str_slug($request->courseName);
         
-        $course = new Course;
+        
+        $course = Course::find($id);
+
+
         $course->slug = $slug;
 
         $course->fill($request->all());

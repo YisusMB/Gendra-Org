@@ -26,7 +26,7 @@ class CreateProfilesTable extends Migration
             $table->string('languages', 128);
             $table->string('dateOfGraduation', 64);
             
-            $table->string('file', 128);
+            $table->string('file', 240);
 
             $table->enum('status', ['PUBLISHED', 'DRAFT'])->default('DRAFT');
 
