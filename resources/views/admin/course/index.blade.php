@@ -1,7 +1,6 @@
 @extends('layouts.styles')
-
-@section('content')
 @component('layouts.partials._header')@endcomponent
+@section('content')
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 offset-md-2" style="background-color: #5267a0;">
@@ -41,14 +40,15 @@
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-outline-primary">
+							<a href=" {{ route('courses.edit', $course->id) }} " class="btn btn-sm btn-outline-primary">
 								EDITAR
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-outline-danger">
+							{!! Form::open(['route' => ['courses.destroy', $course->id], 'method' => 'DELETE']) !!}
+							<button href="" class="btn btn-sm btn-outline-danger">
 								ELIMINAR
-							</a>
+							</button>
 						</td>
 					</tr>
 					@endforeach

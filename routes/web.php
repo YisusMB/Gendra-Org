@@ -26,7 +26,7 @@ Route::get('/curso/{slug}', 'Web\PageController@curso')->name('curso');
 
 //panel admin
 Route::prefix('admin')->group(function () {
-Route::resource('/courses', 'Admin\CourseController');
-Route::resource('/profiles', 'Admin\ProfileController');
-Route::get('/perfil/{slug}', 'Web\PageController@perfil')->name('perfil');
+	Route::resource('/courses', 'Admin\CourseController');
+	Route::resource('/profiles', 'Admin\ProfileController');
+	Route::get('/perfil/{slug}', 'Web\PageController@perfil')->name('perfil');
 });

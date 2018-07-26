@@ -1,7 +1,7 @@
 @extends('layouts.styles')
+@component('layouts.partials._header')@endcomponent
 
 @section('content')
-@component('layouts.partials._header')@endcomponent
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 offset-md-2" style="background-color: #5267a0;">
@@ -46,9 +46,10 @@
 							</a>
 						</td width="10px">
 						<td>
-							<a href="" class="btn btn-sm btn-outline-danger">
+							{!! Form::open(['route' => ['profiles.destroy', $profile->id], 'method' => 'DELETE']) !!}
+							<button class="btn btn-sm btn-outline-danger">
 								ELIMINAR
-							</a>
+							</button>
 						</td>
 					</tr>
 					@endforeach
