@@ -22,7 +22,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::orderBy('id', 'DESC')->paginate(10);
+        $courses = Course::orderBy('id', 'DESC')->where('user_id', auth()->user()->id)->paginate(10);
         return view('admin.course.index', compact('courses'));
     }
 
@@ -44,9 +44,15 @@ class CourseController extends Controller
      */
     public function store(CourseStoreRequest $request)
     {
-        $course = Course::create($request->all());
+        $slug = str_slug($request->courseName);
+        
+        $course = new Course;
+        $course->slug = $slug;
 
-        return redirect()->route('course.edit', $course->id)
+        $course->fill($request->all());
+        $course->save();
+
+        return redirect()->route('courses.edit', $course->id)
         ->with('info', 'Curso creado con exito'); 
     }
 
@@ -83,12 +89,16 @@ class CourseController extends Controller
      */
     public function update(CourseUpdateRequest $request, $id)
     {
-        $course = Course::find($id);
+        $slug = str_slug($request->courseName);
+        
+        $course = new Course;
+        $course->slug = $slug;
 
-        $course->fill($request->all())->save();
+        $course->fill($request->all());
+        $course->save();
 
-        return redirect()->route('course.edit', $course->id)
-        ->with('info', 'Curso actualizado con exito'); 
+        return redirect()->route('courses.edit', $course->id)
+        ->with('info', 'Curso actualizado con exito');  
     }
 
     /**

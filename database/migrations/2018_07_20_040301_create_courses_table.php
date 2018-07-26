@@ -28,7 +28,7 @@ class CreateCoursesTable extends Migration
             $table->string('startDate', 64);
             $table->string('courseAddress', 64);
             $table->mediumText('excerpt');
-            $table->string('file', 128);
+            $table->string('file', 240);
             $table->text('description');
 
             $table->enum('status', ['PUBLISHED', 'DRAFT'])->default('DRAFT');

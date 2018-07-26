@@ -1,7 +1,6 @@
 @extends('layouts.styles')
-
-@section('content')
 @component('layouts.partials._header')@endcomponent
+@section('content')
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 offset-md-2" style="background-color: #5267a0;">
