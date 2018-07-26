@@ -8,7 +8,7 @@ class Profile extends Model
 {
 
 	protected $fillable = [
-		'user_id', 'profileName', 'slug', 'dateOfIncorporation', 'languajes', 'dateOfGraduation', 
+		'user_id', 'profileName', 'slug', 'dateOfIncorporation', 'languages', 'dateOfGraduation', 
 		'file', 'description', 'status'
 	];
 

@@ -41,7 +41,7 @@
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-outline-primary">
+							<a href=" {{ route('profiles.edit', $profile->id) }}" class="btn btn-sm btn-outline-primary">
 								EDITAR
 							</a>
 						</td width="10px">

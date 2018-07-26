@@ -9,7 +9,7 @@
 				<!-- Single blog post -->
 				<div class="col-md-8 single-post">
 					<figure class="post-thumb">
-						<img src="{{ $course->file }}" alt="">
+						<img src="{{ $course->file }}" alt="" style="max-height: 500px;">
 					</figure>
 					<div class="post-content">
 						<div class="date">Fecha de inicio: {{ $course->startDate }}</div>

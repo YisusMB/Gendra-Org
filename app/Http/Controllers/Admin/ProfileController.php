@@ -22,7 +22,7 @@ class ProfileController extends Controller
      */
     public function index()
     {
-        $profiles = Profile::orderBy('id', 'DESC')->paginate(10);
+        $profiles = Profile::orderBy('id', 'DESC')->where('user_id', auth()->user()->id)->paginate(10);
         return view('admin.profile.index', compact('profiles'));
     }
 
@@ -44,9 +44,15 @@ class ProfileController extends Controller
      */
     public function store(ProfileStoreRequest $request)
     {
-        $profile = Profile::create($request->all());
+        $slug = str_slug($request->profileName);
+        
+        $profile = new Profile;
+        $profile->slug = $slug;
 
-        return redirect()->route('profile.edit', $profile->id)
+        $profile->fill($request->all());
+        $profile->save();
+
+        return redirect()->route('profiles.edit', $profile->id)
         ->with('info', 'Perfil creado con exito'); 
     }
 
@@ -83,11 +89,15 @@ class ProfileController extends Controller
      */
     public function update(ProfileUpdateRequest $request, $id)
     {
+        $slug = str_slug($request->profileName);
+        
         $profile = Profile::find($id);
+        $profile->slug = $slug;
 
-        $profile->fill($request->all())->save();
+        $profile->fill($request->all());
+        $profile->save();
 
-        return redirect()->route('profile.edit', $profile->id)
+        return redirect()->route('profiles.edit', $profile->id)
         ->with('info', 'Perfil actualizado con exito'); 
     }
 

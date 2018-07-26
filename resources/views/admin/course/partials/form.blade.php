@@ -42,7 +42,12 @@
 
 <div class="form-group">
 	{{ Form::label('status', 'Estatus') }}
-	{{ Form::text('status', null, ['class' => 'form-control', 'id' => 'status']) }}
+	<label>
+		{{ Form::radio('status', 'PUBLISHED') }} Publicado
+	</label>
+	<label>
+		{{ Form::radio('status', 'Draft') }} Borrador
+	</label>
 </div>
 
 <div class="form-group">
