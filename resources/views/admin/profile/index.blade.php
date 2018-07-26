@@ -46,9 +46,10 @@
 							</a>
 						</td width="10px">
 						<td>
-							<a href="" class="btn btn-sm btn-outline-danger">
+							{!! Form::open(['route' => ['profiles.destroy', $profile->id], 'method' => 'DELETE']) !!}
+							<button class="btn btn-sm btn-outline-danger">
 								ELIMINAR
-							</a>
+							</button>
 						</td>
 					</tr>
 					@endforeach

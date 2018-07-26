@@ -41,14 +41,15 @@
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-outline-primary">
+							<a href=" {{ route('courses.edit', $course->id) }} " class="btn btn-sm btn-outline-primary">
 								EDITAR
 							</a>
 						</td>
 						<td width="10px">
-							<a href="" class="btn btn-sm btn-outline-danger">
+							{!! Form::open(['route' => ['courses.destroy', $course->id], 'method' => 'DELETE']) !!}
+							<button href="" class="btn btn-sm btn-outline-danger">
 								ELIMINAR
-							</a>
+							</button>
 						</td>
 					</tr>
 					@endforeach
