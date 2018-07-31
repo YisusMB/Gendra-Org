@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
 
 use App\Profile;
 use App\Http\Requests\ProfileStoreRequest;
@@ -48,6 +49,8 @@ class ProfileController extends Controller
         
         $profile = new Profile;
         $profile->slug = $slug;
+        $profile->file = time().'.'.$request->file->getClientOriginalExtension();
+        $request->file->move(public_path('profileImages'), $profile->file);
 
         $profile->fill($request->all());
         $profile->save();
@@ -93,6 +96,8 @@ class ProfileController extends Controller
         
         $profile = Profile::find($id);
         $profile->slug = $slug;
+        $profile->file = time().'.'.$request->file->getClientOriginalExtension();
+        $request->file->move(public_path('profileImages'), $profile->file);
 
         $profile->fill($request->all());
         $profile->save();

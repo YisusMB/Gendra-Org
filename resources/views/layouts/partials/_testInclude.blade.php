@@ -1,11 +1,4 @@
-@extends('layouts.styles')
-
-@component('layouts.partials._header')@endcomponent
-
-	@component('layouts.partials._pageInfSectProyectos')@endcomponent
-	@component('layouts.partials._sermonSection')@endcomponent
-	
-	<section class="sermons-list-section spad">
+<section class="sermons-list-section spad">
 			<div class="container">
 				<div class="section-title">
 					<span>Nuestra historia</span>
@@ -30,6 +23,4 @@
 					{{ $profiles->render() }}
 				</div>
 			</div>
-	</section>
-
-@component('layouts.partials._footer')@endcomponent
+		</section>

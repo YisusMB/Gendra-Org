@@ -31,7 +31,7 @@ class CourseUpdateRequest extends FormRequest
             'startDate' => 'required',
             'courseAddress' => 'required',
             'excerpt' => 'required',
-            'file' => 'required',
+            'file' => 'required|mimes:jpg,jpeg,png',
             'description' => 'required',
         ];
     }

@@ -51,8 +51,8 @@
 </div>
 
 <div class="form-group">
-	{{ Form::label('file', 'File') }}
-	{{ Form::text('file', null, ['class' => 'form-control', 'id' => 'file']) }}
+	{{ Form::label('file', 'Imagen') }}
+	{{ Form::file('file', null, ['class' => 'form-control', 'id' => 'file']) }}
 </div>	
 
 <div class="form-group">

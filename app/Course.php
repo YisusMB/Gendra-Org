@@ -9,7 +9,7 @@ class Course extends Model
 
 	protected $fillable = [
 		'user_id', 'courseName', 'slug', 'dayCalendar', 'month', 'instructorName', 'startDate',
-		'courseAddress', 'excerpt', 'file', 'description', 'status'
+		'courseAddress', 'excerpt', 'description', 'status'
 	];
 
     public function user(){

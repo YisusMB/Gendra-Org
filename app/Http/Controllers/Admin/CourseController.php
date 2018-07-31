@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Storage;
+
 
 use App\Course;
 use App\Http\Requests\CourseStoreRequest;
@@ -48,6 +50,8 @@ class CourseController extends Controller
         
         $course = new Course;
         $course->slug = $slug;
+        $course->file = time().'.'.$request->file->getClientOriginalExtension();
+        $request->file->move(public_path('courseImages'), $course->file);
 
         $course->fill($request->all());
         $course->save();
@@ -96,6 +100,8 @@ class CourseController extends Controller
 
 
         $course->slug = $slug;
+        $course->file = time().'.'.$request->file->getClientOriginalExtension();
+        $request->file->move(public_path('courseImages'), $course->file);
 
         $course->fill($request->all());
         $course->save();
