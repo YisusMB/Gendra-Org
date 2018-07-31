@@ -50,8 +50,13 @@ class CourseController extends Controller
         
         $course = new Course;
         $course->slug = $slug;
-        $course->file = time().'.'.$request->file->getClientOriginalExtension();
-        $request->file->move(public_path('courseImages'), $course->file);
+        if ($request->hasFile('file')) {
+
+        Storage::disk('s3')->delete($course->file); //para borrar la imagen anterior y no guardar imagenes a lo pendejo
+
+        $course->file = Storage::disk('s3')->putFile('imagenes/cursos', $request->file('file'), 'public');
+
+        }
 
         $course->fill($request->all());
         $course->save();
@@ -100,8 +105,13 @@ class CourseController extends Controller
 
 
         $course->slug = $slug;
-        $course->file = time().'.'.$request->file->getClientOriginalExtension();
-        $request->file->move(public_path('courseImages'), $course->file);
+        if ($request->hasFile('file')) {
+
+        Storage::disk('s3')->delete($course->file); //para borrar la imagen anterior y no guardar imagenes a lo pendejo
+
+        $course->file = Storage::disk('s3')->putFile('imagenes/cursos', $request->file('file'), 'public');
+
+        }
 
         $course->fill($request->all());
         $course->save();
@@ -118,7 +128,9 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        $course = Course::find($id)->delete();
+        $course = Course::find($id);
+        Storage::disk('s3')->delete($course->file); //para borrar la imagen anterior y no guardar imagenes a lo pendejo
+        $course->delete();
 
         return back()->with('info', 'Eliminado correctamente');
 

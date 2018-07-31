@@ -49,8 +49,13 @@ class ProfileController extends Controller
         
         $profile = new Profile;
         $profile->slug = $slug;
-        $profile->file = time().'.'.$request->file->getClientOriginalExtension();
-        $request->file->move(public_path('profileImages'), $profile->file);
+        if ($request->hasFile('file')) {
+
+        Storage::disk('s3')->delete($profile->file); //para borrar la imagen anterior y no guardar imagenes a lo pendejo
+
+        $profile->file = Storage::disk('s3')->putFile('imagenes/perfiles', $request->file('file'), 'public');
+
+        }
 
         $profile->fill($request->all());
         $profile->save();
@@ -96,8 +101,13 @@ class ProfileController extends Controller
         
         $profile = Profile::find($id);
         $profile->slug = $slug;
-        $profile->file = time().'.'.$request->file->getClientOriginalExtension();
-        $request->file->move(public_path('profileImages'), $profile->file);
+        if ($request->hasFile('file')) {
+
+        Storage::disk('s3')->delete($profile->file); //para borrar la imagen anterior y no guardar imagenes a lo pendejo
+
+        $profile->file = Storage::disk('s3')->putFile('imagenes/perfiles', $request->file('file'), 'public');
+
+    }
 
         $profile->fill($request->all());
         $profile->save();
@@ -114,8 +124,9 @@ class ProfileController extends Controller
      */
     public function destroy($id)
     {
-        $profile = Profile::find($id)->delete();
-
+        $profile = Profile::find($id);
+        Storage::disk('s3')->delete($profile->file); //para borrar la imagen anterior y no guardar imagenes a lo pendejo
+        $profile->delete();
         return back()->with('info', 'Eliminado correctamente');
 
     }

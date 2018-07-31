@@ -15,7 +15,7 @@
 					@foreach($profiles as $profile)
 					<div class="col-sm-6 col-md-4">
 						<div class="sermon-item">
-							<div class="si-thumb set-bg" data-setbg="{{ asset('profileImages/' . $profile->file) }}"></div>
+							<div class="si-thumb set-bg" data-setbg="{{ $profile->file_url }}"></div>
 							<div class="si-content">
 								<h4>{{ $profile->profileName }}</h4>
 								<ul class="sermon-info">

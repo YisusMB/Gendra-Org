@@ -15,4 +15,8 @@ class Profile extends Model
     public function user(){
     	return $this->belongsTo(User::class);
     }
+
+    public function getFileUrlAttribute(){
+    	return env('AWS_URL') . $this->file;
+    }
 }
