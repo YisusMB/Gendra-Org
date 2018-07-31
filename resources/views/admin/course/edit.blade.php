@@ -16,7 +16,7 @@
 	<div class="row" style="padding-top: 10px; padding-bottom: 10px;">
 		<div class="col-md-8 offset-md-2">
 			{!! Form::model($course, ['route' => ['courses.update', $course->id],
-			'method' => 'PUT']) !!}
+			'method' => 'PUT', 'files' => true]) !!}
 				@include('admin.course.partials.form')
 			{!! Form::close() !!}
 		</div>	

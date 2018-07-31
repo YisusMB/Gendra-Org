@@ -15,7 +15,7 @@
 	</div>
 	<div class="row" style="padding-top: 10px; padding-bottom: 10px;">
 		<div class="col-md-8 offset-md-2">
-			{!! Form::open(['route' => 'courses.store']) !!}
+			{!! Form::open(['route' => 'courses.store', 'files' => true]) !!}
 				@include('admin.course.partials.form')
 			{!! Form::close() !!}
 		</div>	

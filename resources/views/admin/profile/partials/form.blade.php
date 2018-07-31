@@ -21,11 +21,6 @@
 </div>
 
 <div class="form-group">
-	{{ Form::label('file', 'Fotografia') }}
-	{{ Form::text('file', null, ['class' => 'form-control', 'id' => 'file']) }}
-</div>
-
-<div class="form-group">
 	{{ Form::label('status', 'Estatus') }}
 	<label>
 		{{ Form::radio('status', 'PUBLISHED') }} Publicado
@@ -34,6 +29,11 @@
 		{{ Form::radio('status', 'DRAFT') }} Borrador
 	</label>
 </div>
+
+<div class="form-group">
+	{{ Form::label('file', 'Fotografia') }}
+	{{ Form::file('file', null, ['class' => 'form-control', 'id' => 'file']) }}
+</div>	
 
 <div class="form-group">
 	{{ Form::submit('Guardar', ['class' => 'btn btn-sm btn-outline-primary']) }}

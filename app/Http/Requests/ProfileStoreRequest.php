@@ -28,7 +28,7 @@ class ProfileStoreRequest extends FormRequest
             'dateOfIncorporation' => 'required',
             'languages' => 'required',
             'dateOfGraduation' => 'required',
-            'file' => 'required',
+            'file' => 'required|mimes:jpg,jpeg,png,'
         ];
     }
 }

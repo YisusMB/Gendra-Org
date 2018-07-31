@@ -9,7 +9,7 @@
 				<!-- Single blog post -->
 				<div class="col-md-8 single-post">
 					<figure class="post-thumb">
-						<img src="{{ $profile->file }}" alt="">
+						<img src="{{ asset('profileImages/' . $profile->file) }}" alt="">
 					</figure>
 					<div class="post-content">
 						<div class="date">Fecha de inicio: {{ $profile->startDate }}</div>

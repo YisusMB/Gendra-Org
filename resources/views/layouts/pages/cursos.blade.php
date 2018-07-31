@@ -15,7 +15,8 @@
 					<div class="el-item">
 						<div class="row">
 							<div class="col-md-4">
-								<div class="el-thubm set-bg" style="background-size: contain;" data-setbg="{{ $course->file }}"></div>
+								<div class="el-thubm set-bg" style="background-size: contain;" 
+								data-setbg="{{ asset('courseImages/' . $course->file) }}"></div>
 							</div>
 							<div class="col-md-8">
 								<div class="el-content">

@@ -23,7 +23,7 @@ class CourseStoreRequest extends FormRequest
      */
     public function rules()
     {
-        return [
+        $rules = [
             'courseName' => 'required',
             'dayCalendar' => 'required',
             'month' => 'required',
@@ -31,8 +31,10 @@ class CourseStoreRequest extends FormRequest
             'startDate' => 'required',
             'courseAddress' => 'required',
             'excerpt' => 'required',
-            'file' => 'required',
+            'file' => 'required|mimes:jpg,jpeg,png',
             'description' => 'required',
         ];
+
+        return $rules;
     }
 }
