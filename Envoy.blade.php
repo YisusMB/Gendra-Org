@@ -12,7 +12,6 @@
     clone_repository
     run_composer
     update_symlinks
-    seeding         <!--this may be removed pls-->
 @endstory
 
 @task('clone_repository')
