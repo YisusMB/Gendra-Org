@@ -5,24 +5,21 @@
 	{{ Form::text('courseName', null, ['class' => 'form-control', 'id' => 'courseName']) }}
 </div>
 
+
+
 <div class="form-group">
-	{{ Form::label('dayCalendar', 'Dia') }}
-	{{ Form::text('dayCalendar', null, ['class' => 'form-control', 'id' => 'dayCalendar']) }}
+	{{ Form::label('Fecha de inicio') }}
+	{{ Form::date('start_date') }}
 </div>
 
 <div class="form-group">
-	{{ Form::label('month', 'Mes') }}
-	{{ Form::text('month', null, ['class' => 'form-control', 'id' => 'month']) }}
+	{{ Form::label('Fecha de termino') }}
+	{{ Form::date('finalization_date') }}
 </div>
 
 <div class="form-group">
 	{{ Form::label('instructorName', 'Nombre del Instructor') }}
 	{{ Form::text('instructorName', null, ['class' => 'form-control', 'id' => 'instructorName']) }}
-</div>
-
-<div class="form-group">
-	{{ Form::label('startDate', 'Fecha de Inicio') }}
-	{{ Form::text('startDate', null, ['class' => 'form-control', 'id' => 'startDate']) }}
 </div>
 
 <div class="form-group">

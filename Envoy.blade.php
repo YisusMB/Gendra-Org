@@ -12,6 +12,7 @@
     clone_repository
     run_composer
     update_symlinks
+    seeding         <!--this may be removed pls-->
 @endstory
 
 @task('clone_repository')
@@ -40,3 +41,4 @@
     echo  'Allowing bootstrap directory'
     chmod -R 777 {{ $new_release_dir }}/bootstrap/
 @endtask
+

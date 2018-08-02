@@ -25,10 +25,7 @@ class CourseStoreRequest extends FormRequest
     {
         $rules = [
             'courseName' => 'required',
-            'dayCalendar' => 'required',
-            'month' => 'required',
             'instructorName' => 'required',
-            'startDate' => 'required',
             'courseAddress' => 'required',
             'excerpt' => 'required',
             'file' => 'required|mimes:jpg,jpeg,png',

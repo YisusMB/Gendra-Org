@@ -21,11 +21,10 @@ class CreateCoursesTable extends Migration
             $table->string('courseName', 128);
             $table->string('slug', 128)->unique();
 
-            $table->integer('dayCalendar')->unsigned();
-            $table->string('month');
+            $table->timestamp('start_date')->nullable();
+            $table->timestamp('finalization_date')->nullable();
 
             $table->string('instructorName', 128);
-            $table->string('startDate', 64);
             $table->string('courseAddress', 64);
             $table->mediumText('excerpt');
             $table->string('file', 240);
