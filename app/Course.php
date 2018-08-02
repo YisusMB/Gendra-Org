@@ -8,8 +8,14 @@ class Course extends Model
 {
 
 	protected $fillable = [
-		'user_id', 'courseName', 'slug', 'dayCalendar', 'month', 'instructorName', 'startDate',
+		'user_id', 'courseName', 'slug', 'instructorName', 'start_date', 'finalization_date',
 		'courseAddress', 'excerpt', 'description', 'status'
+
+
+	];
+
+	protected $dates = [
+		'start_date', 'finalization_date'
 	];
 
     public function user(){

@@ -22,13 +22,13 @@
 								<div class="el-content">
 									<div class="el-header">
 										<div class="el-date">
-											<h2>{{ $course->dayCalendar }}</h2>
-												{{ $course->month }}
+											<h2>{{ $course->start_date->formatLocalized('%d') }}</h2>
+												{{ $course->start_date->formatLocalized('%B') }}
 										</div>
 										<h3> {{ $course->courseName }} </h3>
 										<div class="el-metas">
 											<div class="el-meta"><i class="fa fa-user"></i> {{ $course->instructorName }}</div>
-											<div class="el-meta"><i class="fa fa-calendar"></i> {{ $course->startDate }} </div>
+											<div class="el-meta"><i class="fa fa-calendar"></i> {{ $course->start_date->formatLocalized('%A %d %B %Y') }} </div>
 											<div class="el-meta"><i class="fa fa-map-marker"></i> {{ $course->courseAddress }} </div>
 										</div>
 									</div>
