@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'es',
+    'locale' => 'es_MX',
 
     /*
     |--------------------------------------------------------------------------
@@ -160,6 +160,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+        Laraveles\Spanish\SpanishServiceProvider::class,
 
     ],
 

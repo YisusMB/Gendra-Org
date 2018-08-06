@@ -14,8 +14,7 @@
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );
-
-
+setlocale(LC_TIME, 'ES');
 /*
 |--------------------------------------------------------------------------
 | Bind Important Interfaces

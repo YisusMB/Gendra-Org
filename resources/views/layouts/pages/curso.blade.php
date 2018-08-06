@@ -9,13 +9,14 @@
 				<!-- Single blog post -->
 				<div class="col-md-8 single-post">
 					<figure class="post-thumb">
-						<img src="{{ asset('courseImages/' . $course->file) }}" alt="" style="max-height: 500px;">
+						<img src="{{ $course->file_url }}" alt="" style="max-height: 500px;">
 					</figure>
 					<div class="post-content">
-						<div class="date">Fecha de inicio: {{ $course->startDate }}</div>
 						<h2 class="post-title">{{ $course->courseName }}</h2>
+						<div class="date">Fecha de inicio: {{ $course->start_date->formatLocalized('%A %d %B %Y') }}</div>
+						<div class="date">Fecha de termino: {{ $course->finalization_date->formatLocalized('%A %d %B %Y')}} </div>
 						<div class="post-metas">
-							<div class="post-meta">Instructor: {{ $course->instructorName }}</div>
+							<div class="post-meta">Instructor: {{ $course->instructorName }} </div> <br />
 							<div class="post-meta">Lugar: {{ $course->courseAddress }}</div>
 						</div>
 						<p>{{ $course->description }}</p>
