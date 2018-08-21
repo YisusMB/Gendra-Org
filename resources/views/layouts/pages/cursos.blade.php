@@ -7,7 +7,7 @@
 			<div class="container">
 				<div class="section-title title-left">
 					<span>Dale un vistazo a nuestra oferta</span>
-					<h2>Porximos Cursos</h2>
+					<h2>Proximos Cursos</h2>
 				</div>
 				<div class="event-list">
 					<!-- event list item -->

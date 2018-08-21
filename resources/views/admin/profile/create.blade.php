@@ -6,7 +6,7 @@
 		<div class="col-md-8 offset-md-2" style="background-color: #5267a0;">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h5 style="padding-top: 7px; color: #fff;">
+					<h5 style="padding: 5px; color: #fff;">
 						Crear Perfil
 					</h5>
 				</div>

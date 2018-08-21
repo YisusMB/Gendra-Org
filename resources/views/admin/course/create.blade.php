@@ -6,8 +6,8 @@
 		<div class="col-md-8 offset-md-2" style="background-color: #5267a0;">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h5 style="padding-top: 7px; color: #fff;">
-						Crear Etiqueta
+					<h5 style="padding: 5px; color: #fff;">
+					Crear curso
 					</h5>
 				</div>
 			</div>

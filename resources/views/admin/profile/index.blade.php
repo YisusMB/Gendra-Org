@@ -8,7 +8,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h5 style="padding-top: 7px; color: #fff;">
-					ESTA SECCION ES PARA LOS CURSOS
+					ESTA SECCION ES PARA LOS PERFILES
 					</h5>
 				</div>
 			</div>
