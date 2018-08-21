@@ -30,6 +30,8 @@ class CourseStoreRequest extends FormRequest
             'excerpt' => 'required',
             'file' => 'required|mimes:jpg,jpeg,png',
             'description' => 'required',
+            'start_date' => 'required',
+            'finalization_date' => 'required',
         ];
 
         return $rules;
